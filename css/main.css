@@ -1,0 +1,56 @@
+@keyframes navbarhover {
+    0%   {background-color: rgba(0, 0, 0, 0.410);}
+    25%  {background-color: rgb(65, 65, 65);}
+    50%  {background-color: rgb(158, 158, 158);}
+    100% {background-color: #ddd;}
+  }
+.main {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.topnav {
+    background-color: rgba(0, 0, 0, 0.410);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: -100;
+    backdrop-filter: blur(10px);
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Thin.ttf);
+    transition: all 0.20s;
+    transform: translateX(2px);
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 17px;
+    src: url(../fonts/Roboto-Bold.ttf);
+    border-radius: 2.5pt;
+    animation-name: navbarhover;
+    animation-duration: 0.20s;
+  }
+
+  .topnav a.active {
+    background-image: linear-gradient(to bottom right, rgba(43, 58, 88, 0.884) ,rgb(107, 47, 104));
+    color: white;
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+  }
+
+body {
+    background-color: #2F3033;
+}
