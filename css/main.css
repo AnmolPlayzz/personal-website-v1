@@ -1,56 +1,227 @@
-@keyframes navbarhover {
-    0%   {background-color: rgba(0, 0, 0, 0.410);}
-    25%  {background-color: rgb(65, 65, 65);}
-    50%  {background-color: rgb(158, 158, 158);}
-    100% {background-color: #ddd;}
-  }
-.main {
-    width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
-    overflow: hidden;
+
+/*Tryna keep my CSS Clean 😅*/
+
+/** 
+@TODO: 
+    1. Complete two
+    2. add three and four
+    3. Add footer 
+**/
+
+/*-Animations*/
+
+@keyframes navload {
+  0% {transform: translateY(-100%);}
+  100% {transform: translateY(0%);}
 }
-.topnav {
-    background-color: rgba(0, 0, 0, 0.410);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: -100;
-    backdrop-filter: blur(10px);
-  }
 
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 15px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Thin.ttf);
-    transition: all 0.20s;
-    transform: translateX(2px);
-  }
+@keyframes scale {
+  0% {transform: scale(0);
+  opacity: 0;}
+  100% {transform: scale(1);
+  opacity: 100;}
+}
 
-  .topnav a:hover {
-    background-color: #ddd;
-    color: rgb(0, 0, 0);
-    font-family: Roboto;
-    font-size: 17px;
-    src: url(../fonts/Roboto-Bold.ttf);
-    border-radius: 2.5pt;
-    animation-name: navbarhover;
-    animation-duration: 0.20s;
-  }
+@keyframes pos {
+  0% {transform: translateY(300px);
+  opacity: 0;}
+  100% {transform: translateY(0px);
+  opacity: 100;}
+}
 
-  .topnav a.active {
-    background-image: linear-gradient(to bottom right, rgba(43, 58, 88, 0.884) ,rgb(107, 47, 104));
-    color: white;
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Black.ttf);
-  }
+@keyframes opa {
+  0% {opacity: 0;}
+  100% {opacity: 100;}
+}
+
+/*-End of Animations-*?
+
+/*-Custom Scroll Bar-*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2f2548;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, rgba(157, 76, 189, 0.884) ,rgb(77, 40, 177));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(131, 130, 130);
+  border-radius: 10px;
+}
+
+/*-End of Custom Scroll Bar-*/
+
+/*-Nav Bar-*/
+
+* {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
 
 body {
-    background-color: #2F3033;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(51, 51, 51);
 }
+
+.text {
+  color: #f2f2f2;
+}
+
+.topnav {
+  background-color: rgba(47, 37, 72, 1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 33px 50px;
+  backdrop-filter: blur(20px);
+  animation: navload;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20px;
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.topnav a.active {
+  background-image: linear-gradient(to bottom right, rgba(157, 76, 189, 0.884) ,rgb(77, 40, 177));
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 2px 15px rgb(134, 50, 184);
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+/*-End of Nav Bar-*/
+
+/*-Main Content-*/
+
+.top {
+  background-image: url(../images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #2f2548;
+  display: grid;
+  place-items: center;
+}
+
+.top img {
+  padding-top: 4%;
+  width: 33%;
+  overflow: hidden;
+  animation: pos;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+}
+
+.t1 {
+  color: #ddd;
+  font-size: 42px;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom left, rgba(132, 52, 206, 0.884) ,rgb(79, 54, 190));
+  border-radius: 12px;
+  padding: 10px 55px;
+  box-shadow: 0px 15px 45px rgb(170, 52, 206);
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  animation: pos;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+
+.t1:hover {
+  padding: 15px 60px;
+  font-size: 50px;
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.intro {
+  color: #ddd;
+  font-size: 27px;
+  text-align: center;
+  margin: 40px 30%;
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  animation: pos;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  height: min-content;
+}
+
+.intro:hover {
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+/*-End of main-*/
+
+/*-two-*/
+
+.row {
+  display: flex;
+  padding-top: 400px;
+  background-image: url(../images/bg2.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #001220;
+  color: #ddd;
+  font-size: large;
+}
+
+.who {
+  width: 28%;
+}
+
+.c1 {
+  flex: 50%;
+  padding: 0% 10%;
+}
+
+.c2 {
+  flex: 50%;
+  padding: 0% 10%;
+}
+
+.c2 a {
+  color: rgb(226, 130, 40);
+  font-weight: bolder;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/*-End of Two-*/
