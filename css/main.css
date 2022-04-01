@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
 * {
   font-family: Roboto;
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf) format('truetype');
   scroll-behavior: smooth;
 }
 
@@ -23,11 +28,6 @@ body {
 **/
 
 /*-Animations*/
-
-@font-face {
-  font-family: 'Roboto';
-  src: url(../fonts/Roboto-Regular.ttf) format('ttf');
-}
 
 @keyframes navload {
   0% {transform: translateY(-100%);}
