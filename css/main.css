@@ -1,14 +1,33 @@
+* {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  margin: 0;
+  background-color: rgb(51, 51, 51);
+  overflow-anchor: none;
+}
+
 
 /*Tryna keep my CSS Clean 😅*/
 
 /** 
 @TODO: 
-    1. Complete two
-    2. add three and four
-    3. Add footer 
+    1. Complete two - done
+    2. add three - done
+    3. Add footer - done
 **/
 
 /*-Animations*/
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf) format('ttf');
+}
 
 @keyframes navload {
   0% {transform: translateY(-100%);}
@@ -60,16 +79,12 @@
 /*-End of Custom Scroll Bar-*/
 
 /*-Nav Bar-*/
-
-* {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Regular.ttf);
+.active2 {
+  display: none;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(51, 51, 51);
+.topnav2 a {
+  display: none;
 }
 
 .text {
@@ -83,10 +98,12 @@ body {
   top: 0;
   left: 0;
   padding: 33px 50px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
+  -moz-backdrop-filter: blur(12px);
   animation: navload;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
+  z-index: 2;
 }
 
 .topnav a {
@@ -133,6 +150,7 @@ body {
   background-color: #2f2548;
   display: grid;
   place-items: center;
+  position: relative;
 }
 
 .top img {
@@ -209,19 +227,284 @@ body {
 
 .c1 {
   flex: 50%;
-  padding: 0% 10%;
+  margin: 0% 10%;
 }
 
 .c2 {
   flex: 50%;
-  padding: 0% 10%;
+  margin: 0% 10%;
 }
 
 .c2 a {
-  color: rgb(226, 130, 40);
+  text-decoration: none;
+  color: rgb(253, 253, 253);
+  padding: 2px 10px;
+  text-decoration: none;
   font-weight: bolder;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom left, rgba(81, 59, 209, 0.884) ,rgb(167, 54, 190));
+  transition: all 0.2s ease-in;
+}
+
+.c2 a:hover {
+  text-decoration: none;
+  background-color: #f2f2f2;
+  color: rgb(253, 253, 253);
+  padding: 2px 10px;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
 }
 
 /*-End of Two-*/
+
+/*-Three-*/
+
+.three {
+  background-image: url(../images/end.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #201832;
+  display: grid;
+  place-items: center;
+}
+
+.threehead {
+  margin-top: 20%;
+  margin-bottom: 0%;
+  background-color: #a33fd1;
+  background-image: linear-gradient(45deg, #435ef5, #9e35ff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  font-weight: 1000;
+  font-size: 60px;
+}
+
+.video {
+  width: 70%;
+  overflow: hidden;
+  transform: translateZ(0);
+  border-radius: 22px;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  transition: all 0.2s ease;
+  box-shadow: 0px 12px 20px hsl(0, 0%, 7%);
+}
+
+/*footer*/
+
+.foot {
+  width: 100%;
+  background-image: url(../images/foot.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #1a0a22;
+  color: #ddd;
+  display: grid;
+  place-items: center;
+}
+
+.foot h1 {
+  margin-top: 150px;
+  font-size: 40px;
+}
+
+.foot1 {
+  margin-top: 2px;
+  margin-bottom: 150px;
+  font-size: 25px;
+  border-radius: 40px;
+  background-image: linear-gradient(45deg, #435ef5, #9e35ff);
+  padding: 9px 20px;
+  text-decoration: none;
+  color: #ddd;
+  font-weight: bolder;
+}
+ 
+/*-Starting work on responsiveness - Experiment-*/
+
+@media only screen and (max-width: 600px) {
+
+
+  .topnav {
+    display: none;
+  }
+  .top {
+    background-image: url(../images//mobile/bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #2f2548;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  .t1 {
+    color: #ddd;
+    font-size: 28px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom left, rgba(132, 52, 206, 0.884) ,rgb(79, 54, 190));
+    border-radius: 12px;
+    padding: 10px 55px;
+    box-shadow: 0px 15px 45px rgb(170, 52, 206);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    animation: pos;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .top img {
+    padding-top: 25%;
+    width: 80%;
+    overflow: hidden;
+    animation: pos;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .t1:hover {
+    color: #ddd;
+    font-size: 28px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom left, rgba(132, 52, 206, 0.884) ,rgb(79, 54, 190));
+    border-radius: 12px;
+    padding: 10px 55px;
+    box-shadow: 0px 15px 45px rgb(170, 52, 206);
+  }
+  .intro {
+    color: #ddd;
+    font-size: 16px;
+    text-align: center;
+    margin: 40px 10% 80px 10%;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    animation: pos;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }  
+
+  .row {
+    display:grid;
+    width: 100%;
+    padding-top: 150px;
+    background-image: url(../images/mobile/bg2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #001220;
+    color: #ddd;
+    font-size: large;
+  }
+  
+  .who {
+    width: 33%;
+  }
+  
+  .c1 {
+    flex: 100%;
+  }
+  
+  .c2 {
+    margin-top: 20px;
+    flex: 100%;
+  }
+
+  .three {
+    background-image: url(../images/mobile/end.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #201832;
+    display: grid;
+    place-items: center;
+  }
+  
+  .threehead {
+    margin-top: 36%;
+    margin-bottom: 0%;
+    background-color: #a33fd1;
+    background-image: linear-gradient(45deg, #435ef5, #9e35ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: 1000;
+    font-size: 30px;
+  }
+  
+  .video {
+    width: 84%;
+    overflow: hidden;
+    transform: translateZ(0);
+    border-radius: 22px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    transition: all 0.2s ease;
+    box-shadow: 0px 12px 20px hsl(0, 0%, 7%);
+  }  
+
+  .foot h1 {
+    margin-top: 150px;
+    font-size: 20px;
+  }  
+
+  .foot1 {
+    margin-top: 2px;
+    margin-bottom: 150px;
+    font-size: 15px;
+    border-radius: 40px;
+    background-image: linear-gradient(45deg, #435ef5, #9e35ff);
+    padding: 9px 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bolder;
+  } 
+
+  /*mobile nav*/
+
+    .topnav2 {
+      z-index: 4;
+      background-color: rgba(131, 130, 130, 0);
+      width: 100%;
+      position:fixed;
+      overflow-y:show;
+      overflow-x:show;
+      animation: navload 0.2s ease-in;
+    }
+
+    .topnav2 #myLinks {
+      display: none;
+    }
+
+    .topnav2 a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+
+    .topnav2 a.icon {
+      background: #00000000;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav2 a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .active2 {
+      background-color: hsla(158, 95%, 34%, 0);
+      color: white;
+    }
+}
