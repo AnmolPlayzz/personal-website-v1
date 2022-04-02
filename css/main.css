@@ -92,14 +92,13 @@ body {
 }
 
 .topnav {
-  background-color: rgba(47, 37, 72, 1);
+  background-color: rgba(47, 37, 72, 0);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   padding: 33px 50px;
-  backdrop-filter: blur(12px);
-  -moz-backdrop-filter: blur(12px);
+  backdrop-filter: blur(0px);
   animation: navload;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -198,12 +197,6 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   height: min-content;
-}
-
-.intro:hover {
-  transition: all;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
 }
 
 /*-End of main-*/
@@ -319,13 +312,14 @@ body {
   font-size: 25px;
   border-radius: 40px;
   background-image: linear-gradient(45deg, #435ef5, #9e35ff);
+  box-shadow: 0px 5px 40px #435ef5;
   padding: 9px 20px;
   text-decoration: none;
   color: #ddd;
   font-weight: bolder;
 }
  
-/*-Starting work on responsiveness - Experiment-*/
+/*-Starting work on responsiveness-*/
 
 @media only screen and (max-width: 600px) {
 
@@ -470,7 +464,6 @@ body {
 
     .topnav2 {
       z-index: 4;
-      background-color: rgba(131, 130, 130, 0);
       width: 100%;
       position:fixed;
       overflow-y:show;
@@ -479,19 +472,25 @@ body {
     }
 
     .topnav2 #myLinks {
-      display: none;
+      transform: translateX(-200%);
+      backdrop-filter: blur(20px);
+      transition: all 0.1s ease-in;
+      font-weight:normal;
     }
 
     .topnav2 a {
       color: white;
-      padding: 14px 16px;
+      padding: 30px 16px;
       text-decoration: none;
       font-size: 17px;
       display: block;
+      font-weight:normal;
+      transition: all 0.1s ease-in;
     }
 
     .topnav2 a.icon {
       background: #00000000;
+      padding: 30px 20px;
       display: block;
       position: absolute;
       right: 0;
@@ -499,12 +498,131 @@ body {
     }
 
     .topnav2 a:hover {
-      background-color: #ddd;
-      color: black;
+      font-size: 18.5px;
+      font-weight:bolder;
+      transition: all 0.1s ease-in;
     }
 
     .active2 {
-      background-color: hsla(158, 95%, 34%, 0);
       color: white;
     }
 }
+
+/*Tabletty mody*/
+
+@media only screen and (min-width: 601px) and (max-width: 980px) {
+  .top {
+    background-image: url(../images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #2f2548;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  
+  .top img {
+    padding-top: 7%;
+    width: 47%;
+    overflow: hidden;
+    animation: pos;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .t1 {
+    color: #ddd;
+    font-size: 42px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom left, rgba(132, 52, 206, 0.884) ,rgb(79, 54, 190));
+    border-radius: 12px;
+    padding: 10px 55px;
+    box-shadow: 0px 15px 45px rgb(170, 52, 206);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    animation: pos;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .intro {
+    color: #ddd;
+    font-size: 27px;
+    text-align: center;
+    margin: 40px 17%;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    animation: pos;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    height: min-content;
+  }
+
+  .row {
+    display:grid;
+    width: 100%;
+    padding-top: 150px;
+    background-image: url(../images/bg2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #001220;
+    color: #ddd;
+    font-size: large;
+  }
+  
+  .who {
+    width: 17%;
+  }
+  
+  .c1 {
+    flex: 100%;
+  }
+  
+  .c2 {
+    margin-top: 20px;
+    flex: 100%;
+  }
+
+  .threehead {
+    margin-top: 20%;
+    margin-bottom: 0%;
+    background-color: #a33fd1;
+    background-image: linear-gradient(45deg, #435ef5, #9e35ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: 1000;
+    font-size: 50px;
+  }
+  
+  .video {
+    width: 80%;
+    overflow: hidden;
+    transform: translateZ(0);
+    border-radius: 22px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    transition: all 0.2s ease;
+    box-shadow: 0px 12px 20px hsl(0, 0%, 7%);
+  }
+
+  .foot h1 {
+    margin-top: 220px;
+  }  
+
+  .foot1 {
+    margin-top: 2px;
+    margin-bottom: 150px;
+    border-radius: 40px;
+    background-image: linear-gradient(45deg, #435ef5, #9e35ff);
+    padding: 9px 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bolder;
+  } 
+
+} 
