@@ -18,11 +18,11 @@ window.addEventListener("scroll", (event) => {
 
 function myFunction() {
     var x = document.getElementById("myLinks");
-    if (x.style.transform === "translateX(0%)") {
-      x.style.transform = "translateX(-200%)";
+    if (x.style.transform === "translateY(0%)") {
+      x.style.transform = "translateY(-200%)";
       x.style.transition = "all 0.3s";
     } else {
-      x.style.transform = "translateX(0%)";
+      x.style.transform = "translateY(0%)";
       x.style.transition = "all 0.3s";
     }
   }

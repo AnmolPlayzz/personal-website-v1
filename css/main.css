@@ -472,7 +472,7 @@ body {
     }
 
     .topnav2 #myLinks {
-      transform: translateX(-200%);
+      transform: translateY(-200%);
       backdrop-filter: blur(20px);
       transition: all 0.1s ease-in;
       font-weight:normal;
