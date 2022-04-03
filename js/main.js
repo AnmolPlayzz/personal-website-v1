@@ -1,8 +1,7 @@
-
+console.log("da nub site™")
 window.addEventListener("scroll", (event) => {
     let scrollY = this.scrollY;
     let scrollX = this.scrollX;
-    console.log(scrollY)
     if(scrollY > 30) {
         document.getElementById("nav").style.padding = "21px 50px";
         document.getElementById("nav").style.backgroundColor = "rgba(0, 0, 0, 0.510)";
