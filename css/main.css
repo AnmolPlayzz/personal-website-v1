@@ -14,7 +14,6 @@
 body {
   margin: 0;
   background-color: rgb(51, 51, 51);
-  overflow-anchor: none;
 }
 
 
@@ -100,8 +99,7 @@ body {
   padding: 33px 50px;
   backdrop-filter: blur(0px);
   animation: navload;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
   z-index: 2;
 }
 
@@ -156,9 +154,11 @@ body {
   padding-top: 4%;
   width: 33%;
   overflow: hidden;
+  opacity: 0;
   animation: pos;
-  animation-duration: 0.6s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
 }
 
 .t1 {
@@ -172,9 +172,11 @@ body {
   transition: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
+  opacity: 0;
   animation: pos;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  animation-delay: 0.24s;
+  animation-fill-mode: forwards;
 }
 
 .t1:hover {
@@ -193,9 +195,11 @@ body {
   transition: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
+  opacity: 0;
   animation: pos;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  animation-delay: 0.28s;
+  animation-fill-mode: forwards;
   height: min-content;
 }
 
@@ -320,7 +324,6 @@ body {
   color: #ddd;
   font-weight: bolder;
 }
- 
 /*-Starting work on responsiveness-*/
 
 @media only screen and (max-width: 600px) {
@@ -350,18 +353,22 @@ body {
     transition: all;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    opacity: 0;
     animation: pos;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-delay: 0.24s;
+    animation-fill-mode: forwards;
   }
 
   .top img {
     padding-top: 25%;
     width: 80%;
     overflow: hidden;
+    opacity: 0;
     animation: pos;
-    animation-duration: 0.6s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
   }
 
   .t1:hover {
@@ -381,9 +388,11 @@ body {
     transition: all;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    opacity: 0;
     animation: pos;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-delay: 0.28s;
+    animation-fill-mode: forwards;
   }  
 
   .row {
@@ -467,10 +476,11 @@ body {
     .topnav2 {
       z-index: 4;
       width: 100%;
+      top: 0;
       position:fixed;
       overflow-y:show;
       overflow-x:show;
-      animation: navload 0.2s ease-in;
+      animation: navload 0.4s;
     }
 
     .topnav2 #myLinks {
@@ -527,9 +537,11 @@ body {
     padding-top: 7%;
     width: 47%;
     overflow: hidden;
+    opacity: 0;
     animation: pos;
-    animation-duration: 0.6s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
   }
   
   .t1 {
@@ -543,9 +555,11 @@ body {
     transition: all;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    opacity: 0;
     animation: pos;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-delay: 0.24s;
+    animation-fill-mode: forwards;
   }
 
   .intro {
@@ -556,10 +570,11 @@ body {
     transition: all;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    opacity: 0;
     animation: pos;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    height: min-content;
+    animation-duration: 0.3s;
+    animation-delay: 0.28s;
+    animation-fill-mode: forwards;
   }
 
   .row {
