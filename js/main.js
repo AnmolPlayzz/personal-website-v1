@@ -17,12 +17,41 @@ window.addEventListener("scroll", (event) => {
 
 function myFunction() {
     var x = document.getElementById("myLinks");
+    var ya = document.getElementById("bar1");
+    var yb = document.getElementById("bar2");
+    var yc = document.getElementById("bar3");
+    var yd = document.getElementById("bar4");
+
     if (x.style.transform === "translateY(0%)") {
       x.style.transform = "translateY(-200%)";
       x.style.transition = "all 0.3s";
+      ya.style.transform = "translateX(0%)"
+      ya.style.opacity = "1"
+      ya.style.transition = "all 0.2s ease";
+      yb.style.transform = "translateX(0%)"
+      yb.style.opacity = "1"
+      yb.style.transition = "all 0.2s ease";
+      yc.style.transform = "rotate(0deg)"
+      yc.style.transformOrigin = "center center";
+      yc.style.transition = "all 0.2s ease";
+      yd.style.transform = "rotate(0deg)"
+      yd.style.transformOrigin = "center center";
+      yd.style.transition = "all 0.2s ease";
     } else {
       x.style.transform = "translateY(0%)";
       x.style.transition = "all 0.3s";
+      ya.style.transform = "translateX(10%)"
+      ya.style.opacity = "0"
+      ya.style.transition = "all 0.2s ease";
+      yb.style.transform = "translateX(-10%)"
+      yb.style.opacity = "0"
+      yb.style.transition = "all 0.2s ease";
+      yc.style.transform = "rotate(45deg)";
+      yc.style.transformOrigin = "center center";
+      yc.style.transition = "all 0.2s ease";
+      yd.style.transform = "rotate(-45deg)"
+      yd.style.transformOrigin = "center center";
+      yd.style.transition = "all 0.2s ease";
     }
   }
 

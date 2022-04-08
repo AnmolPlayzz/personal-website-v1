@@ -510,8 +510,7 @@ body {
     }
 
     .topnav2 a:hover {
-      font-size: 18.5px;
-      font-weight:bolder;
+      font-weight: 1000;
       transition: all 0.1s ease-in;
     }
 
@@ -643,3 +642,11 @@ body {
   } 
 
 } 
+
+#bar3 {
+  transform-origin: center center;
+}
+
+#bar4 {
+  transform-origin: center center;
+}
