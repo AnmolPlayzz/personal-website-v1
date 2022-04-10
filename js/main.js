@@ -40,10 +40,10 @@ function myFunction() {
     } else {
       x.style.transform = "translateY(0%)";
       x.style.transition = "all 0.3s";
-      ya.style.transform = "translateX(10%)"
+      ya.style.transform = "translateX(100%)"
       ya.style.opacity = "0"
       ya.style.transition = "all 0.2s ease";
-      yb.style.transform = "translateX(-10%)"
+      yb.style.transform = "translateX(-100%)"
       yb.style.opacity = "0"
       yb.style.transition = "all 0.2s ease";
       yc.style.transform = "rotate(45deg)";
