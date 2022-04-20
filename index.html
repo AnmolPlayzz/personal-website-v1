@@ -8,6 +8,7 @@
 <meta property="og:image" content="https://cdn.discordapp.com/attachments/814809703963557889/960216709841682513/img.png">
 <link rel="icon" href="images/img.png" type="image/x-icon">
 <link rel="stylesheet" href="css/main.css">
+<script>history.scrollRestoration = "manual"</script>
 </head>
 <body>  
   <script type="text/javascript" src="js/main.js"></script>
@@ -56,15 +57,18 @@
     </div>
   </div>
   <div class="three">
-    <h1 class="threehead">Some of my work</h1>
-    <video class="video" loop autoplay muted>
-      <source src="Videos/Video.mp4" 
+    <h1 id="vidh" class="threehead">Some of my work</h1>
+    <div id="vid">
+      <video class="video" loop autoplay muted>
+        <source src="Videos/Video.mp4" 
               type="video/mp4">
-    </video>
+      </video>
+    </div>
+
   </div>
-  <div class="foot">
-    <h1>Looks like you've reached the end.</h1>
-    <a class="foot1" onClick="window.scrollTo(0, 0)" href="#">Scroll back up?</a>
+  <div id="footer" class="foot">
+    <h1 id="footer1">Looks like you've reached the end.</h1>
+    <a id="footer2" class="foot1" onClick="window.scrollTo(0, 0)" href="#">Scroll back up?</a>
   </div>
 </body>
 </html>

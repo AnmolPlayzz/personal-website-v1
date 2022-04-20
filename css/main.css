@@ -19,13 +19,6 @@ body {
 
 /*Tryna keep my CSS Clean 😅*/
 
-/** 
-@TODO: 
-    1. Complete two - done
-    2. add three - done
-    3. Add footer - done
-**/
-
 /*-Animations*/
 
 @keyframes navload {
@@ -62,17 +55,20 @@ body {
 
 ::-webkit-scrollbar-track {
   background-color: #2f2548;
-  border-radius: 10px;
+
 }
 
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to bottom, rgba(157, 76, 189, 0.884) ,rgb(77, 40, 177));
   border-radius: 10px;
+  border: 3px solid #2f2548;
+  -webkit-transition: border 0.2s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(131, 130, 130);
   border-radius: 10px;
+  border: 0.5px solid #2f2548;
 }
 
 /*-End of Custom Scroll Bar-*/
@@ -227,11 +223,15 @@ body {
 .c1 {
   flex: 50%;
   margin: 0% 10%;
+  transform: translateY(100px);
+  opacity: 0;
 }
 
 .c2 {
   flex: 50%;
   margin: 0% 10%;
+  transform: translateY(100px);
+  opacity: 0;
 }
 
 .c2 a {
@@ -267,13 +267,14 @@ body {
   background-color: #201832;
   display: grid;
   place-items: center;
+  align-items: center;
 }
 
 .threehead {
   margin-top: 20%;
   margin-bottom: 0%;
   background-color: #a33fd1;
-  background-image: linear-gradient(45deg, #435ef5, #9e35ff);
+  background-image: linear-gradient(60deg, #f5438d, #9e35ff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -281,17 +282,27 @@ body {
   -moz-text-fill-color: transparent;
   font-weight: 1000;
   font-size: 60px;
+  opacity: 0;
+  transform: scale(0);
 }
 
 .video {
   width: 70%;
   overflow: hidden;
-  transform: translateZ(0);
   border-radius: 22px;
   margin-top: 1%;
   margin-bottom: 3%;
   transition: all 0.2s ease;
   box-shadow: 0px 12px 20px hsl(0, 0%, 7%);
+
+}
+
+#vid {
+  opacity: 0;
+  transform: scale(0) translateY(20px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*footer*/
@@ -315,14 +326,23 @@ body {
 .foot1 {
   margin-top: 2px;
   margin-bottom: 150px;
-  font-size: 25px;
+  font-size: 21px;
   border-radius: 40px;
   background-image: linear-gradient(45deg, #435ef5, #9e35ff);
   box-shadow: 0px 5px 40px #435ef5;
-  padding: 9px 20px;
+  padding: 15px 40px;
   text-decoration: none;
   color: #ddd;
-  font-weight: bolder;
+  font-weight: 3000;
+}
+
+#footer1 {
+  opacity: 0;
+}
+
+#footer2 {
+  opacity: 0;
+  transform: translateY(20px);
 }
 /*-Starting work on responsiveness-*/
 
