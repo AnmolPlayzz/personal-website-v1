@@ -3,13 +3,17 @@
   src: url(../fonts/Roboto-Regular.ttf) format('truetype');
 }
 
+*::selection {
+  background: rgb(64, 10, 85);
+  text-shadow: 0px 0px 6px #ddd;
+  color: #ffffff;
+}
+
 * {
   font-family: Roboto;
   src: url(../fonts/Roboto-Regular.ttf) format('truetype');
   scroll-behavior: smooth;
 }
-
-
 
 body {
   margin: 0;
