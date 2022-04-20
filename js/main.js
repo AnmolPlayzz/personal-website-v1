@@ -53,7 +53,7 @@ window.addEventListener("scroll", (event) => {
       document.getElementById("footer2").style.opacity = "1";
       document.getElementById("footer2").style.transform = " translateY(0px)";
       document.getElementById("footer1").style.transition = "all 0.3s 0s ease";
-      document.getElementById("footer2").style.transition = "all 0.6s 0.3s ease";
+      document.getElementById("footer2").style.transition = "all 0.6s 0s ease";
     }
 });
 
