@@ -4,7 +4,7 @@
 }
 
 *::selection {
-  background: rgb(64, 10, 85);
+  background: rgb(32, 35, 41);
   text-shadow: 0px 0px 6px #ddd;
   color: #ffffff;
 }
