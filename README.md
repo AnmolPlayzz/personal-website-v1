@@ -8,4 +8,4 @@ My website
   
 > https://AnmolPlayzz.github.io
 
-### Thanks to Robin#1008 for fixing my P.o.S. grammar.
+## Thanks to Robin#1008 for fixing my P.o.S. grammar.
