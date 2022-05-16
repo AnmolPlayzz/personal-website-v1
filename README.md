@@ -1,4 +1,4 @@
-![website](https://user-images.githubusercontent.com/74979911/168287370-a321c2ca-c910-4eea-8c6a-316f71adcee0.png)
+<img src="https://user-images.githubusercontent.com/74979911/168560717-a6f392ce-d933-4e9a-9330-ab81a74a7060.png" align="center">
 <h1 align="center">AnmolPlayzz's website</h2>
 <p align="center">My personal website.</p>
 
@@ -11,5 +11,13 @@
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/anmolplayzz/anmolplayzz.github.io" align="center">
 </p>
 
+---
+
 <h2>What is this</h2>
 <p>This is my personal portfolio website hosted on GitHub pages. It was started as a project to learn front-end technologies and flex on others.</p>
+
+<h2>Can I copy code from this repo?</h2>
+<p>Yes! This repo is completely open source and I wouldn't mind any copying.</p>
+
+<h2>I found a bug, what do I do?</h2>
+<p>Please open an issue <a href="https://github.com/AnmolPlayzz/AnmolPlayzz.github.io/issues">here</a> and provide details about the bug.
