@@ -29,7 +29,7 @@ window.addEventListener("scroll", (event) => {
     var tit1 = document.getElementById('c1');
     var tit2 = document.getElementById('vidh');
     var tit3 = document.getElementById('cardb');
-    var tit4 = document.getElementById('footer');
+    var tit4 = document.getElementById('af');
     if (isInViewport(tit1)) {
       document.getElementById("c1").style.opacity = "1";
       document.getElementById("c1").style.transform = "translateY(0px)";
