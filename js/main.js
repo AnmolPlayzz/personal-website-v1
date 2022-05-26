@@ -28,8 +28,8 @@ window.addEventListener("scroll", (event) => {
     };
     var tit1 = document.getElementById('c1');
     var tit2 = document.getElementById('vidh');
-    var tit3 = document.getElementById('vid');
-    var tit4 = document.getElementById('footer2');
+    var tit3 = document.getElementById('cardb');
+    var tit4 = document.getElementById('footer');
     if (isInViewport(tit1)) {
       document.getElementById("c1").style.opacity = "1";
       document.getElementById("c1").style.transform = "translateY(0px)";
@@ -44,16 +44,20 @@ window.addEventListener("scroll", (event) => {
       document.getElementById("vidh").style.transition = "all 0.3s 0.2s ease";
     }
     if (isInViewport(tit3)) {
-      document.getElementById("vid").style.opacity = "1";
-      document.getElementById("vid").style.transform = "scale(1) translateY(0px)";
-      document.getElementById("vid").style.transition = "all 0.3s 0s ease";
+      document.getElementById("carda").style.opacity = "1";
+      document.getElementById("cardb").style.opacity = "1";
+      document.getElementById("carda").style.transition = "all 0.3s 0s ease";
+      document.getElementById("cardb").style.transition = "all 0.3s 0s ease";
     }
     if (isInViewport(tit4)) {
-      document.getElementById("footer1").style.opacity = "1";
-      document.getElementById("footer2").style.opacity = "1";
-      document.getElementById("footer2").style.transform = " translateY(0px)";
-      document.getElementById("footer1").style.transition = "all 0.3s 0s ease";
-      document.getElementById("footer2").style.transition = "all 0.6s 0s ease";
+      document.getElementById("git").style.opacity = "1";
+      document.getElementById("git").style.transform = "scale(1)";
+      document.getElementById("hf").style.opacity = "1";
+      document.getElementById("hf").style.transform = "translateY(0px)";
+      document.getElementById("af").style.opacity = "1";
+      document.getElementById("git").style.transition = "all 0.2s ease";
+      document.getElementById("hf").style.transition = "all 0.3s ease";
+      document.getElementById("af").style.transition = "all 0.4s ease";
     }
 });
 
@@ -122,3 +126,5 @@ function myFunction() {
         document.getElementById("icon1").style.transition = "all 0.3s";
     }
 });
+
+//page transitions maybe
