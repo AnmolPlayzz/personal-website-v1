@@ -16,9 +16,6 @@
 <br>
 <h1>FAQs</h1>
 
-<h2>What is this?</h2>
-<p>This is my personal portfolio website hosted on GitHub pages. It was started as a project to learn front-end technologies and flex on others.</p>
-
 <h2>What is this</h2>
 <p>This is my personal portfolio website hosted on GitHub pages. It was started as a project to learn front-end technologies and flex on others.</p>
 
@@ -27,5 +24,3 @@
 
 <h2>I found a bug, what do I do?</h2>
 <p>Please open an issue <a href="https://github.com/AnmolPlayzz/AnmolPlayzz.github.io/issues">here</a> and provide details about the bug.
-
-
