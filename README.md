@@ -1,5 +1,5 @@
 <img src="https://user-images.githubusercontent.com/74979911/168560717-a6f392ce-d933-4e9a-9330-ab81a74a7060.png" align="center">
-<h1 align="center">AnmolPlayzz's website</h2>
+<h1 align="center" style="color: #b061ff;">AnmolPlayzz's website</h2>
 <p align="center">My personal website.</p>
 
 <p align="center">
