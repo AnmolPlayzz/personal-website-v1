@@ -126,5 +126,10 @@ function myFunction() {
         document.getElementById("icon1").style.transition = "all 0.3s";
     }
 });
-
-//page transitions maybe
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('bm'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'data.json'
+})
