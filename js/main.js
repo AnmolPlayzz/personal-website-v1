@@ -133,3 +133,5 @@ var animation = bodymovin.loadAnimation({
   autoplay: true,
   path: 'data.json'
 })
+
+
