@@ -28,6 +28,7 @@ html.is-animating .transition-fade {
 body {
   margin: 0;
   background-color: rgb(51, 51, 51);
+-webkit-tap-highlight-color: transparent;
 }
 
 
