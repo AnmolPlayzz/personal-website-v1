@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/74979911/168560717-a6f392ce-d933-4e9a-9330-ab81a74a7060.png" align="center">
+<img src="https://image.thum.io/get/width/1920/crop/800/noanimate/https://anmolplayzz.tk" align="center">
 <h1 align="center" style="font-weight: bolder;">AnmolPlayzz's website</h2>
 <p align="center">My personal website.</p>
 
