@@ -7,16 +7,23 @@
 <meta content="#2f3136" data-react-helmet="true" name="theme-color"/>
 <meta property="og:image" content="https://cdn.discordapp.com/attachments/814809703963557889/960216709841682513/img.png">
 <link rel="icon" href="images/img.png" type="image/x-icon">
+<script>history.scrollRestoration = "manual"</script>
 <link rel="stylesheet" href="css/main.css">
 </head>
-<body>  
-  <script type="text/javascript" src="js/main.js"></script>
+<body class="scroll">
+  <script defer type="text/javascript" src="js/main.js"></script>
   <div id="nav" class="topnav">
-    <a class="active" href="#">Home</a>
-    <a href="socials">Socials</a>
-    <a href="contact">Contact</a>
+    <div class="holder1">
+      <img id="imghead" src="images/img.png">
+      <span id="cont">AnmolPlayzz</span>
+    </div>
+    <div class="holder">
+      <a class="active" href="#">Home</a>
+      <a href="socials">Socials</a>
+      <a href="contact">Contact</a>
+    </div>
   </div>
-<div class="tn2">
+  <div class="tn2">
     <div id="topnav2" class="topnav2">
     <a href="#" id="actibe" class="active2">Home</a>
     <div id="myLinks" class="myLinks">
@@ -37,7 +44,7 @@
         </svg>
     </a>
   </div>
-</div>
+  </div>
   <div class="top">
     <img src="images/face.webp" alt="Anmol">
     <span class="t1">Hi! I'm Anmol</span>
@@ -56,15 +63,30 @@
     </div>
   </div>
   <div class="three">
-    <h1 class="threehead">Some of my work</h1>
-    <video class="video" loop autoplay muted>
-      <source src="Videos/Video.mp4" 
-              type="video/mp4">
-    </video>
+    <h1 id="vidh">Personal Projects</h1>
+    <div id="contcard" class="contcard">
+    <div id="cardb" class="cardb">
+      <div class="cardblock1">
+        <h2 class="cardtit1">My website</h2>
+        <p>This website. It was started as a project for me to learn web technologies like HTML, CSS and JavaScript.</p>
+        <a href="https://github.com/AnmolPlayzz/AnmolPlayzz.github.io" target="_blank">Source code</a>
+      </div>
+    </div>
+    <div id="carda" class="carda">
+      <div class="cardblock">
+        <h2 class="cardtit">Premiere Pro transitions</h2>
+        <p>A small pack which contains transitions for Adobe Premiere Pro.</p>
+        <a>Not yet ready</a>
+      </div>
+    </div>
+    </div>
   </div>
-  <div class="foot">
-    <h1>Looks like you've reached the end.</h1>
-    <a class="foot1" onClick="window.scrollTo(0, 0)" href="#">Scroll back up?</a>
+  <div id="footer" class="foot">
+    <div class="footh1">
+      <img id="git" src="images/socials/Github.svg">
+      <h1 id="hf">This website is open source!</h1>
+      <a id="af" href="https://github.com/AnmolPlayzz/AnmolPlayzz.github.io" target="_blank">Source Code!</a>
+    </div>
   </div>
 </body>
 </html>

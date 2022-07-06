@@ -1,17 +1,61 @@
 console.log("da nub site™")
+window.addEventListener('DOMContentLoaded', (event) => {
+  window.scrollTo(0, 0);  
+});
+
+
 window.addEventListener("scroll", (event) => {
     let scrollY = this.scrollY;
     let scrollX = this.scrollX;
     if(scrollY > 30) {
-        document.getElementById("nav").style.padding = "21px 50px";
         document.getElementById("nav").style.backgroundColor = "rgba(0, 0, 0, 0.510)";
-        document.getElementById("nav").style.backdropFilter = "blur(12px)";
+        document.getElementById("nav").style.backdropFilter = "blur(20px)";
         document.getElementById("nav").style.transition = "all 0.3s";
     } else {
-        document.getElementById("nav").style.padding = "33px 50px";
         document.getElementById("nav").style.backgroundColor = "rgba(47, 37, 72, 0)";
         document.getElementById("nav").style.backdropFilter = "blur(0px)";
         document.getElementById("nav").style.transition = "all 0.3s";
+    }
+
+    var isInViewport = function (elem) {
+      var bounding = elem.getBoundingClientRect();
+      return (
+          bounding.top >= 0 &&
+          bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      );
+    };
+    var tit1 = document.getElementById('c1');
+    var tit2 = document.getElementById('vidh');
+    var tit3 = document.getElementById('cardb');
+    var tit4 = document.getElementById('af');
+    if (isInViewport(tit1)) {
+      document.getElementById("c1").style.opacity = "1";
+      document.getElementById("c1").style.transform = "translateY(0px)";
+      document.getElementById("c1").style.transition = "all 0.3s 0.1s ease";
+      document.getElementById("c2").style.opacity = "1";
+      document.getElementById("c2").style.transform = "translateY(0px)";
+      document.getElementById("c2").style.transition = "all 0.3s 0.3s ease";
+    }
+    if (isInViewport(tit2)) {
+      document.getElementById("vidh").style.opacity = "1";
+      document.getElementById("vidh").style.transform = "scale(1)";
+      document.getElementById("vidh").style.transition = "all 0.3s 0.2s ease";
+    }
+    if (isInViewport(tit3)) {
+      document.getElementById("carda").style.opacity = "1";
+      document.getElementById("cardb").style.opacity = "1";
+      document.getElementById("carda").style.transition = "all 0.3s 0s ease";
+      document.getElementById("cardb").style.transition = "all 0.3s 0s ease";
+    }
+    if (isInViewport(tit4)) {
+      document.getElementById("git").style.opacity = "1";
+      document.getElementById("git").style.transform = "scale(1)";
+      document.getElementById("hf").style.opacity = "1";
+      document.getElementById("hf").style.transform = "translateY(0px)";
+      document.getElementById("af").style.opacity = "1";
+      document.getElementById("git").style.transition = "all 0.2s ease";
+      document.getElementById("hf").style.transition = "all 0.3s ease";
+      document.getElementById("af").style.transition = "all 0.4s ease";
     }
 });
 
@@ -80,3 +124,12 @@ function myFunction() {
         document.getElementById("icon1").style.transition = "all 0.3s";
     }
 });
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('bm'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'data.json'
+})
+
+
