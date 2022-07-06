@@ -13,8 +13,7 @@ html.is-animating .transition-fade {
 }
 
 *::selection {
-  background: rgb(32, 35, 41);
-  text-shadow: 0px 0px 6px #ddd;
+  background-color: #7e34d1;
   color: #ffffff;
 }
 
@@ -22,7 +21,7 @@ html.is-animating .transition-fade {
   font-family: Roboto;
   src: url(../fonts/Roboto-Regular.ttf) format('truetype');
   scroll-behavior: smooth;
--webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -64,26 +63,38 @@ body {
 
 /*-Custom Scroll Bar-*/
 
-::-webkit-scrollbar {
-  width: 10px;
+.scroll {
+  overflow: overlay;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #2f2548;
+.scroll::-webkit-scrollbar {
+  inline-size: 11px;
+}
+
+.scroll::-webkit-scrollbar-track {
 
 }
 
-::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to bottom, rgba(157, 76, 189, 0.884) ,rgb(77, 40, 177));
   border-radius: 10px;
-  border: 3px solid #2f2548;
+  border-block: none;
+  border: 4px solid transparent;
+  background-clip: padding-box;
   -webkit-transition: border 0.2s ease;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.scroll::-webkit-scrollbar-thumb:hover {
   background: rgb(131, 130, 130);
   border-radius: 10px;
-  border: 0.5px solid #2f2548;
+  border-block: none;
+  inline-size: 13px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.scroll::-webkit-scrollbar:hover {
+  background-color: #28282ece;
 }
 
 /*-End of Custom Scroll Bar-*/
