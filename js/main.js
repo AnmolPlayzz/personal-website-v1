@@ -8,13 +8,9 @@ window.addEventListener("scroll", (event) => {
     let scrollY = this.scrollY;
     let scrollX = this.scrollX;
     if(scrollY > 30) {
-        document.getElementById("nav").style.backgroundColor = "rgba(0, 0, 0, 0.510)";
-        document.getElementById("nav").style.backdropFilter = "blur(20px)";
-        document.getElementById("nav").style.transition = "all 0.3s";
+        document.getElementById("nav").classList.add("nav-scrolled");
     } else {
-        document.getElementById("nav").style.backgroundColor = "rgba(47, 37, 72, 0)";
-        document.getElementById("nav").style.backdropFilter = "blur(0px)";
-        document.getElementById("nav").style.transition = "all 0.3s";
+        document.getElementById("nav").classList.remove("nav-scrolled");
     }
 
     var isInViewport = function (elem) {
