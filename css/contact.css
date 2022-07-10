@@ -80,7 +80,7 @@ h3 {
 }
 
   .row2 {
-    perspective: 850px;
+    perspective: 900px;
     display: flex;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -98,15 +98,13 @@ h3 {
     width: 100%;
     border-radius: 10px;
     transform: rotateX(0deg) rotateY(10deg);
-    box-shadow: 0px 0px 20px rgb(41, 38, 38);
     transition: all 0.2s ease;
   }
   
   .sbhq:hover {
     width: 100%;
     border-radius: 10px;
-    transform: rotateX(0deg) rotateY(15deg);
-    box-shadow: 0px 0px 20px rgb(41, 38, 38);
+    transform: rotateX(0deg) rotateY(19deg);
   }
 
   .c3 {
@@ -128,10 +126,19 @@ h3 {
   }
 
   .c4 h1 {
-    text-shadow: 0px 0px 80px #ddd;
     padding-bottom: 25px;
-    text-decoration: underline;
-    text-underline-offset: 17px;
+    position: relative;
+  }
+
+  .c4 h1::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 10vmax;
   }
 
   .c4 p, h1 {
@@ -139,18 +146,28 @@ h3 {
   }
 
   .go {
+    width: fit-content;
     margin-top: 20px;
-    width: 8%;
-    border-radius: 100%;
-    box-shadow: 0px 0px 15px rgb(109, 23, 158);
+    border-radius: 10vmax;
+    padding: 7px 14px;
     transition: all 0.2s ease;
+    background-color: #ffffff00;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    border: #ddd 1px solid;
    }
 
    .go:hover {
        transform: translateY(-5px);
-       box-shadow: 0px 0px 9px rgb(58, 31, 128);
+       background-color: #ffffff;
+       color: black;
    }
 
+   .go1 {
+      align-self: flex-end;
+   }
 
   .row3 {
     perspective: 850px;
@@ -172,7 +189,6 @@ h3 {
     width: 80%;
     border-radius: 10px;
     transform: rotateX(0deg) rotateY(-10deg);
-    box-shadow: 0px 0px 20px rgb(41, 38, 38);
     transition: all 0.2s ease;
   }
   
@@ -180,7 +196,6 @@ h3 {
     width: 80%;
     border-radius: 10px;
     transform: rotateX(0deg) rotateY(-15deg);
-    box-shadow: 0px 0px 20px rgb(41, 38, 38);
   }
 
   .c6 {
@@ -203,10 +218,19 @@ h3 {
   }
 
   .c5 h1 {
-    text-shadow: 0px 0px 80px #ddd;
     padding-bottom: 25px;
-    text-decoration: underline;
-    text-underline-offset: 17px;
+    position: relative;
+  }
+
+  .c5 h1::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 10vmax;
   }
 
   .c5 p, h1 {
@@ -235,8 +259,7 @@ h3 {
       .sbhq {
         width: 100%;
         border-radius: 10px;
-        transform: rotateX(20deg) rotateY(0deg);
-        box-shadow: 0px 0px 20px rgb(41, 38, 38);
+        transform: rotateX(15deg) rotateY(0deg);
         transition: all 0.2s ease;
       }
       
@@ -244,7 +267,6 @@ h3 {
         width: 100%;
         border-radius: 10px;
         transform: rotateX(30deg) rotateY(0deg);
-        box-shadow: 0px 0px 20px rgb(41, 38, 38);
         transition: all 0.2s ease;
       }
 
@@ -261,8 +283,9 @@ h3 {
         padding: 0% 5% 0% 5%;
         text-align: center;
       }
+
       .go {
-        width: 50px;
+        margin: 20px auto;
       }
 
       .row3 {
@@ -277,8 +300,7 @@ h3 {
       .dm {
         width: 80%;
         border-radius: 10px;
-        transform: rotateX(20deg) rotateY(0deg);
-        box-shadow: 0px 0px 20px rgb(41, 38, 38);
+        transform: rotateX(15deg) rotateY(0deg);
         transition: all 0.2s ease;
       }
 
@@ -286,7 +308,6 @@ h3 {
         width: 80%;
         border-radius: 10px;
         transform: rotateX(30deg) rotateY(0deg);
-        box-shadow: 0px 0px 20px rgb(41, 38, 38);
         transition: all 0.2s ease;
       }
       
