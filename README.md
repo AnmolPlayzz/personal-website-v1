@@ -3,7 +3,7 @@
 <p align="center">My personal website.</p>
 
 <p align="center">
-  <a href="https://discord.gg/c2ZTMHJ64E" target="_blank">
+  <a href="https://discord.gg/QdRSaaNFmT" target="_blank">
     <img src="https://img.shields.io/discord/843231619443982378?label=Discord&logo=Discord" align="center"  />
   </a>
   <img alt="GitHub" src="https://img.shields.io/github/license/anmolplayzz/anmolplayzz.github.io" align="center">
