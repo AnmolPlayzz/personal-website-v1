@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://discord.gg/QdRSaaNFmT" target="_blank">
-    <img src="https://img.shields.io/discord/843231619443982378?label=Discord&logo=Discord" align="center"  />
+    <img src="https://img.shields.io/discord/1000065932187664515?label=Discord&logo=Discord" align="center"  />
   </a>
   <img alt="GitHub" src="https://img.shields.io/github/license/anmolplayzz/anmolplayzz.github.io" align="center">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/anmolplayzz/anmolplayzz.github.io" align="center">
