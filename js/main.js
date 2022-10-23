@@ -128,4 +128,18 @@ var animation = bodymovin.loadAnimation({
   path: 'data.json'
 })
 
-
+function tran() {
+    document.querySelector('body').style.opacity = "0"
+    document.querySelector('body').style.transition = "all 0.3s ease";
+    document.location.href="/"
+};
+function tran1() {
+    document.querySelector('body').style.opacity = "0"
+    document.querySelector('body').style.transition = "all 0.3s ease";
+    document.location.href="/socials"
+};
+function tran2() {
+    document.querySelector('body').style.opacity = "0"
+    document.querySelector('body').style.transition = "all 0.3s ease";
+    document.location.href="/contact"
+};
