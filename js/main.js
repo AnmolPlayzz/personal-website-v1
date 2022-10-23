@@ -131,15 +131,15 @@ var animation = bodymovin.loadAnimation({
 function tran() {
     document.querySelector('body').style.opacity = "0"
     document.querySelector('body').style.transition = "all 0.3s ease";
-    document.location.href="/"
+    setTimeout(() => { document.location.href="/" }, 300);
 };
 function tran1() {
     document.querySelector('body').style.opacity = "0"
     document.querySelector('body').style.transition = "all 0.3s ease";
-    document.location.href="/socials"
+    setTimeout(() => { document.location.href="/socials" }, 300);
 };
 function tran2() {
     document.querySelector('body').style.opacity = "0"
     document.querySelector('body').style.transition = "all 0.3s ease";
-    document.location.href="/contact"
+    setTimeout(() => { document.location.href="/contact" }, 300);
 };
