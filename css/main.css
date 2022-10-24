@@ -3,14 +3,6 @@
   src: url(../fonts/Roboto-Regular.ttf) format('truetype');
 }
 
-.transition-fade {
-  opacity: 1;
-  transition: 200ms;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
-}
 
 *::selection {
   background-color: #7e34d1;
