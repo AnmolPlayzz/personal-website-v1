@@ -7,6 +7,10 @@ html {
     opacity: 0
 }
 
+.no-d {
+    display:none;
+}
+
 *::selection {
   background-color: #7e34d1;
   color: #ffffff;

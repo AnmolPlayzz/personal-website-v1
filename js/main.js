@@ -3,7 +3,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
   window.scrollTo(0, 0);
 });
 
-document.addEventListener('readystatechange', event => { 
+let preventLoadingElement = document.querySelectorAll(".no-d");
+if(preventLoadingElement[0]) {
+    preventLoadingElement.forEach(element => {
+        if (element !== null) {
+            setTimeout(function() {
+                element.classList.remove("no-d");
+                }, 100);
+        }
+    });
+}
+
+document.addEventListener('readystatechange', event => {
+
   if (event.target.readyState === "complete") {
     setTimeout(() => { 
       document.querySelector('body').style.opacity = "1"
