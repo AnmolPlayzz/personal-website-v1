@@ -3,6 +3,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
   window.scrollTo(0, 0);  
 });
 
+document.addEventListener('readystatechange', event => { 
+  if (event.target.readyState === "complete") {
+    setTimeout(() => { 
+      document.querySelector('body').style.opacity = "1"
+      document.querySelector('body').style.transition = "all 0.6s ease";
+     }, 500);
+  }
+});
 
 window.addEventListener("scroll", (event) => {
     let scrollY = this.scrollY;

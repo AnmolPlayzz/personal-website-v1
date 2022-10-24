@@ -18,9 +18,9 @@
 
 body {
   margin: 0;
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(19, 19, 19) !important;
   -webkit-tap-highlight-color: transparent;
-  animation: opa 0.5s ease
+  opacity: 0;
 }
 
 
