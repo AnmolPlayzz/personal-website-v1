@@ -1,6 +1,6 @@
 console.log("da nub site™")
 window.addEventListener('DOMContentLoaded', (event) => {
-  window.scrollTo(0, 0);  
+  window.scrollTo(0, 0);
 });
 
 document.addEventListener('readystatechange', event => { 
@@ -8,6 +8,7 @@ document.addEventListener('readystatechange', event => {
     setTimeout(() => { 
       document.querySelector('body').style.opacity = "1"
       document.querySelector('body').style.transition = "all 0.6s ease";
+      document.querySelector('html').style.opacity = "1"
      }, 500);
   }
 });

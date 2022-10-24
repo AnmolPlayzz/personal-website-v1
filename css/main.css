@@ -3,6 +3,9 @@
   src: url(../fonts/Roboto-Regular.ttf) format('truetype');
 }
 
+html {
+    opacity: 0
+}
 
 *::selection {
   background-color: #7e34d1;
