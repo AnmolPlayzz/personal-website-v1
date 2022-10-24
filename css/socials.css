@@ -14,11 +14,6 @@
     opacity: 100;}
   }
 
-body {
-    background: rgb(19, 19, 19);
-    color: #fff;
-}
-
 .card {
     display: flex;
     flex-direction: column;
