@@ -3,22 +3,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
   window.scrollTo(0, 0);
 });
 
-let preventLoadingElement = document.querySelectorAll(".no-d");
-if(preventLoadingElement[0]) {
-    preventLoadingElement.forEach(element => {
-        if (element !== null) {
-            setTimeout(function() {
-                element.classList.remove("no-d");
-                }, 100);
-        }
-    });
-}
-
 document.addEventListener('readystatechange', event => {
 
   if (event.target.readyState === "complete") {
     setTimeout(() => {
-        document.querySelector('body').style.backgroundColor = "rgb(19, 19, 19)"
         document.querySelector('body').style.opacity = "1"
         document.querySelector('body').style.transition = "all 0.6s ease";
         document.querySelector('html').style.opacity = "1"
@@ -151,19 +139,16 @@ var animation = bodymovin.loadAnimation({
 })
 
 function tran() {
-    document.querySelector('body').style.backgroundColor = "#000000"
     document.querySelector('body').style.opacity = "0"
     document.querySelector('body').style.transition = "all 0.4s ease";
     setTimeout(() => { document.location.href="/" }, 700);
 };
 function tran1() {
-    document.querySelector('body').style.backgroundColor = "#000000"
     document.querySelector('body').style.opacity = "0"
     document.querySelector('body').style.transition = "all 0.4s ease";
     setTimeout(() => { document.location.href="/socials" }, 700);
 };
 function tran2() {
-    document.querySelector('body').style.backgroundColor = "#000000"
     document.querySelector('body').style.opacity = "0"
     document.querySelector('body').style.transition = "all 0.4s ease";
     setTimeout(() => { document.location.href="/contact" }, 700);
