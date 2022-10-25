@@ -3,17 +3,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   window.scrollTo(0, 0);
 });
 
-document.addEventListener('readystatechange', event => {
-
-  if (event.target.readyState === "complete") {
-    setTimeout(() => {
-        document.querySelector('body').style.opacity = "1"
-        document.querySelector('body').style.transition = "all 0.6s ease";
-        document.querySelector('html').style.opacity = "1"
-     }, 500);
-  }
-});
-
 window.addEventListener("scroll", (event) => {
     let scrollY = this.scrollY;
     let scrollX = this.scrollX;
@@ -137,19 +126,3 @@ var animation = bodymovin.loadAnimation({
   autoplay: true,
   path: 'data.json'
 })
-
-function tran() {
-    document.querySelector('body').style.opacity = "0"
-    document.querySelector('body').style.transition = "all 0.4s ease";
-    setTimeout(() => { document.location.href="/" }, 700);
-};
-function tran1() {
-    document.querySelector('body').style.opacity = "0"
-    document.querySelector('body').style.transition = "all 0.4s ease";
-    setTimeout(() => { document.location.href="/socials" }, 700);
-};
-function tran2() {
-    document.querySelector('body').style.opacity = "0"
-    document.querySelector('body').style.transition = "all 0.4s ease";
-    setTimeout(() => { document.location.href="/contact" }, 700);
-};
