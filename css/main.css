@@ -203,7 +203,6 @@ body {
   place-items: center;
   position: relative;
 }
-/**
 .top::before {
   content: "";
   position: absolute;
@@ -211,10 +210,16 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  opacity: 0;
   background-image: url(../images/bg.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
-}**/
+  background-size: cover;
+  background-position: 50%;
+  animation: opa ease;
+  animation-duration: 0.5s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
 
 .top img {
   padding-top: 4%;
@@ -591,14 +596,16 @@ body {
 }
 
 @media only screen and (max-width: 677px) {
+  .top::before {
+    background-image: url(../images//mobile/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .topnav {
     display: none;
   }
 
   .top {
-    background-image: url(../images//mobile/bg.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
     background-color: #2f2548;
     display: grid;
     place-items: center;
