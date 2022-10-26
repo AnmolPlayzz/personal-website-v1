@@ -60,9 +60,10 @@ function myFunction() {
     var yb = document.getElementById("bar2");
     var yc = document.getElementById("bar3");
     var yd = document.getElementById("bar4");
-
-    if (x.style.transform === "translateY(0%)") {
-      x.style.transform = "translateY(-200%)";
+    console.log("a")
+    if (x.style.transform == "scale(1.4)") {
+      x.style.transform = "scale(2)";
+      x.style.opacity = "0"
       x.style.transition = "all 0.3s";
       ya.style.transform = "translateX(0%)"
       ya.style.opacity = "1"
@@ -77,7 +78,8 @@ function myFunction() {
       yd.style.transformOrigin = "center center";
       yd.style.transition = "all 0.2s ease";
     } else {
-      x.style.transform = "translateY(0%)";
+      x.style.transform = "scale(1.4)";
+      x.style.opacity="1"
       x.style.transition = "all 0.3s";
       ya.style.transform = "translateX(100%)"
       ya.style.opacity = "0"
@@ -104,8 +106,6 @@ function myFunction() {
         document.getElementById("actibe").style.backdropFilter = "blur(12px)";
         document.getElementById("topnav2").querySelector("a").style.padding = "20px 25px";
         document.getElementById("icon1").style.padding = "20px 27px";
-        document.getElementById("myLinks").style.backgroundColor = "rgba(0, 0, 0, 0.510)";
-        document.getElementById("myLinks").style.backdropFilter = "blur(12px)";
         document.getElementById("actibe").style.transition = "all 0.3s";
         document.getElementById("icon1").style.transition = "all 0.3s";
     } else {
@@ -113,8 +113,6 @@ function myFunction() {
         document.getElementById("actibe").style.backdropFilter = "blur(0px)";
         document.getElementById("topnav2").querySelector("a").style.padding = "30px 25px";
         document.getElementById("icon1").style.padding = "30px 27px";
-        document.getElementById("myLinks").style.backgroundColor = "rgba(0, 0, 0, 0)";
-        document.getElementById("myLinks").style.backdropFilter = "blur(20px)";
         document.getElementById("actibe").style.transition = "all 0.3s";
         document.getElementById("icon1").style.transition = "all 0.3s";
     }

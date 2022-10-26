@@ -802,17 +802,28 @@ body {
     }
 
     .topnav2 #myLinks {
-      transform: translateY(-200%);
-      backdrop-filter: blur(20px);
+      transform: scale(200%);
+      backdrop-filter: blur(32px);
       transition: all 0.1s ease-in;
       font-weight:normal;
+      height: 100vh;
+      transition: all 0.3s ease 0s;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      background-color: rgba(0,0,0,0.510);
     }
 
     .topnav2 a, .topnav2 button {
       color: white;
       padding: 30px 25px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 18px;
       display: block;
       font-weight:normal;
       transition: all 0.1s ease-in;
