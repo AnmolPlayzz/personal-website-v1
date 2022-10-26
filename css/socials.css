@@ -67,7 +67,7 @@
     gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     opacity: 0;
-    animation: pos;
+    animation: opa;
     animation-duration: 0.3s;
     animation-delay: 0.6s;
     animation-fill-mode: forwards;
@@ -118,7 +118,7 @@
         gap: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
         opacity: 0;
-        animation: pos;
+        animation: opa;
         animation-duration: 0.3s;
         animation-delay: 0.6s;
         animation-fill-mode: forwards;

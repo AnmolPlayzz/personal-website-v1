@@ -10,8 +10,9 @@ document.addEventListener('readystatechange', event => {
   });
 
 function tran() {
+
     document.querySelector('body').style.opacity = "0"
-    document.querySelector('body').style.transition = "all 0.4s ease";
+    document.querySelector('body').style.transition = "all 0.5s ease";
     setTimeout(() => { document.location.href="/" }, 700);
 };
 function tran1() {
@@ -22,5 +23,5 @@ function tran1() {
 function tran2() {
     document.querySelector('body').style.opacity = "0"
     document.querySelector('body').style.transition = "all 0.4s ease";
-    setTimeout(() => { document.location.href="/contact" }, 700);
+    setTimeout(() => { document.location.href="/contact" }, 600);
 };
