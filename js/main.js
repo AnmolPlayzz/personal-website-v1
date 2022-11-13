@@ -62,10 +62,13 @@ function myFunction() {
     var yd = document.getElementById("bar4");
     console.log("a")
     if (x.style.transform == "scale(1.4)") {
-      x.style.transform = "scale(2)";
       x.style.opacity = "0"
       x.style.transition = "all 0.3s";
       ya.style.transform = "translateX(0%)"
+      setTimeout(() => {
+        x.style.display = "none"
+      },300)
+      x.style.transform = "scale(2)";
       ya.style.opacity = "1"
       ya.style.transition = "all 0.2s ease";
       yb.style.transform = "translateX(0%)"
@@ -78,9 +81,12 @@ function myFunction() {
       yd.style.transformOrigin = "center center";
       yd.style.transition = "all 0.2s ease";
     } else {
-      x.style.transform = "scale(1.4)";
-      x.style.opacity="1"
-      x.style.transition = "all 0.3s";
+      x.style.display = "flex"
+      setTimeout(()=>{
+        x.style.transform = "scale(1.4)";
+        x.style.opacity="1"
+        x.style.transition = "all 0.3s";
+      },400)
       ya.style.transform = "translateX(100%)"
       ya.style.opacity = "0"
       ya.style.transition = "all 0.2s ease";
