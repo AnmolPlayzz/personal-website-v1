@@ -1,18 +1,7 @@
-<img src="https://image.thum.io/get/width/1920/crop/800/noanimate/https://anmolplayzz.tk" align="center">
-<h1 align="center" style="font-weight: bolder;">AnmolPlayzz's website</h2>
-<p align="center">My personal website.</p>
-
-<p align="center">
-  <a href="https://discord.gg/QdRSaaNFmT" target="_blank">
-    <img src="https://img.shields.io/discord/1000065932187664515?label=Discord&logo=Discord" align="center"  />
-  </a>
-  <img alt="GitHub" src="https://img.shields.io/github/license/anmolplayzz/anmolplayzz.github.io" align="center">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/anmolplayzz/anmolplayzz.github.io" align="center">
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/anmolplayzz/anmolplayzz.github.io" align="center">
-  <img alt="GitHub issues" src="https://img.shields.io/badge/Status-stable-green" align="center">
-
-
-</p>
+<h1 align="center" style="font-weight: bolder;">Personal website v1</h2>
+<p align="center">⚠ Archived</p>
+<p align="center">Check out v2 <a href="https://github.com/AnmolPlayzz/personal-website-v2">here</a></p>
+  
 <br>
 
 <h1>Check it out!</h1>
