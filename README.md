@@ -5,9 +5,7 @@
 <br>
 
 <h1>Check it out!</h1>
-<li>https://anmolplayzz.tk</li>
-...or
-<li>https://anmolplayzz.github.io</li>
+https://anmolplayzz-v1.netlify.app/
 
 <br>
 <br>
